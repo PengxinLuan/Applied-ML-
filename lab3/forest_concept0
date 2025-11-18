@@ -1,0 +1,50 @@
+digraph {
+	0 [label="
+id: 0
+splitValue: -
+nextSplitAttribute: airTemp
+mse: 0.426875
+samples: 4"]
+	1 [label="
+id: 1
+splitValue: warm
+nextSplitAttribute: humidity
+mse: 0.0049999999999999975
+samples: 3"]
+	0 -> 1
+	2 [label="
+id: 2
+splitValue: normal
+mse: 0.0
+samples: 1
+avgValue: 0.9"]
+	1 -> 2
+	3 [label="
+id: 3
+splitValue: high
+nextSplitAttribute: waterTemp
+mse: 0.0012499999999999968
+samples: 2"]
+	1 -> 3
+	4 [label="
+id: 4
+splitValue: warm
+mse: 0.0
+samples: 1
+avgValue: 0.8"]
+	3 -> 4
+	5 [label="
+id: 5
+splitValue: cool
+mse: 0.0
+samples: 1
+avgValue: 0.85"]
+	3 -> 5
+	6 [label="
+id: 6
+splitValue: cold
+mse: 0.0
+samples: 1
+avgValue: 0.1"]
+	0 -> 6
+}
