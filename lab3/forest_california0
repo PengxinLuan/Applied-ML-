@@ -1,0 +1,49 @@
+digraph {
+	0 [label="
+id: 0
+splitValue: -
+nextSplitAttribute: Latitude
+mse: 19126.45701529327
+samples: 14447"]
+	1 [label="
+id: 1
+splitValue: 0
+nextSplitAttribute: Population
+mse: 10354.696720014788
+samples: 8284"]
+	0 -> 1
+	2 [label="
+id: 2
+splitValue: 0
+mse: 10353.377107590759
+samples: 8282
+avgValue: 2.1563826358367546"]
+	1 -> 2
+	3 [label="
+id: 3
+splitValue: 1
+mse: 0.0
+samples: 2
+avgValue: 1.344"]
+	1 -> 3
+	4 [label="
+id: 4
+splitValue: 1
+nextSplitAttribute: Population
+mse: 8637.061484610675
+samples: 6163"]
+	0 -> 4
+	5 [label="
+id: 5
+splitValue: 0
+mse: 8637.061484610675
+samples: 6163
+avgValue: 1.9609528914489698"]
+	4 -> 5
+	6 [label="
+id: 6
+splitValue: 1
+samples: 0
+avgValue: 0.0"]
+	4 -> 6
+}

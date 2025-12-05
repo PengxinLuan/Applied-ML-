@@ -1,0 +1,48 @@
+digraph {
+	0 [label="
+id: 0
+splitValue: -
+nextSplitAttribute: Latitude
+mse: 19295.86106736559
+samples: 14447"]
+	1 [label="
+id: 1
+splitValue: 0
+nextSplitAttribute: AveRooms
+mse: 10325.288727519042
+samples: 8199"]
+	0 -> 1
+	2 [label="
+id: 2
+splitValue: 0
+mse: 10325.288727519042
+samples: 8199
+avgValue: 2.1634600841566045"]
+	1 -> 2
+	3 [label="
+id: 3
+splitValue: 1
+samples: 0
+avgValue: 0.0"]
+	1 -> 3
+	4 [label="
+id: 4
+splitValue: 1
+nextSplitAttribute: AveRooms
+mse: 8778.916659810335
+samples: 6248"]
+	0 -> 4
+	5 [label="
+id: 5
+splitValue: 0
+mse: 8778.916659810335
+samples: 6248
+avgValue: 1.9309730537772085"]
+	4 -> 5
+	6 [label="
+id: 6
+splitValue: 1
+samples: 0
+avgValue: 0.0"]
+	4 -> 6
+}
