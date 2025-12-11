@@ -9,7 +9,7 @@ from ordered_set import OrderedSet
 class ID3RegressionTreePredictor :
 
 
-    def __init__(self, minSamplesLeaf = 1, minSamplesSplit = 2, maxDepth = 100, stopMSE = 0.0) :
+    def __init__(self, minSamplesLeaf = 3, minSamplesSplit = 2, maxDepth = 5, stopMSE = 0.0) :
 
         self.__nodeCounter = -1
         
